@@ -1,15 +1,86 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+ /* padding: 2rem;*/
   text-align: center;
 }
+body,html {
+  overflow-x: hidden;
+}
+.logo{
+	position: relative;
+	align-content: center;
+  font-family: stylish;
+  color: black;
+  width: 100vw;
+  font-size: 200%;
+  margin-top: 100px;
+  text-shadow: 0px 0px 6px rgba(0,0,0,0.4);
+  
+}
+.editbox{
+	width: 90%;
+  height: 35px;
+  font-size: 16px;
+  color: #ffff;
+  background-color: rgba(1,1,1,0.10);
+  text-shadow: 0px 0px 6px rgba(0,0,0,0.8);
+  border: 0px solid rgba(100, 100, 100, 1);
+  border-radius: 2px;
+	
+}
+.editbox::placeholder {
+  color: white; /* Replace with your desired color */
+}
+button {
+  background: linear-gradient(
+    50deg,
+    rgba(255, 255, 255, 0.4) 12%,
+    rgba(255, 255, 255, 0.1) 77%
+  );
+  background-blend-mode: ;
+  box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  border: none; /* Remove the default button border */
+  border-radius: 5px; /* Add rounded corners for a glass-like effect */
+  padding: 10px 20px;
+  color: #fff;
+  text-shadow: 0px 0px 6px rgba(0,0,0,0.8);
+  cursor: pointer;
+  font-size: 16px;
+  width: 80%;
+  
+  transition: background-color 0.3s ease;
+  margin-top: 10%;
+  transition: transform 0.2s;
+  
+}
+button:active{
+	transform: scale(1.05);
+}
+html {
+  background:
+    radial-gradient(
+      227.77% 227.77% at -8.45% -10.97%,
+      rgba(147, 248, 255, 1) 0%,
+      rgba(255, 200, 249, 0) 60%
+    ),
+    radial-gradient(
+      111.77% 111.77% at 107% 111%,
+      rgba(147, 248, 255, 1) 0%,
+      rgba(255, 200, 249, 0) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(255, 200, 249, 1) 0%,
+      rgba(255, 200, 249, 1) 100%
+    );
+  background-blend-mode: , , ;
+  background-size: cover;
+  
+            background-attachment: fixed;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
@@ -18,25 +89,8 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+@font-face {
+  font-family: "stylish"; /* You can choose any name for your font */
+  src: url('/NatureBeautyPersonalUse-9Y2DK.ttf') format('truetype');
 }
