@@ -7,8 +7,9 @@
 body,html {
   overflow-x: hidden;
 }
-.logo{
+.ctn{
 	position: relative;
+	
 	align-content: center;
   font-family: stylish;
   color: black;
@@ -32,7 +33,7 @@ body,html {
 .editbox::placeholder {
   color: white; /* Replace with your desired color */
 }
-button {
+.DivButton {
   background: linear-gradient(
     50deg,
     rgba(255, 255, 255, 0.4) 12%,
@@ -45,20 +46,53 @@ button {
 
   border: none; /* Remove the default button border */
   border-radius: 5px; /* Add rounded corners for a glass-like effect */
-  padding: 10px 20px;
+  padding: 10px;
   color: #fff;
   text-shadow: 0px 0px 6px rgba(0,0,0,0.8);
   cursor: pointer;
   font-size: 16px;
-  width: 80%;
-  
+  width: 82%;
+  margin-left: 6%;
   transition: background-color 0.3s ease;
   margin-top: 10%;
   transition: transform 0.2s;
   
+  font-size: 45%;
+  font-family: Sans-Serif;
+  
+  display: flex;
+  
+  
 }
-button:active{
+.btn{
+	background: linear-gradient(
+    50deg,
+    rgba(255, 255, 255, 0.4) 12%,
+    rgba(255, 255, 255, 0.1) 77%
+  );
+  background-blend-mode: ;
+  box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: none; /* Remove the default button border */
+  border-radius: 5px; /* Add rounded corners for a glass-like effect */
+  padding: 10px;
+  color: #fff;
+  text-shadow: 0px 0px 6px rgba(0,0,0,0.8);
+  cursor: pointer;
+  font-size: 16px;
+  width: 82%;
+  margin-left: 8%;
+  margin-top: 10%;
+  display: flex;
+  transition: background-color 0.3s ease;
+  transition: transform 0.2s;
+}
+.btn:active{
 	transform: scale(1.05);
+}
+.btn:focus{
+	outline: none;
 }
 html {
   background:
@@ -82,15 +116,46 @@ html {
   
             background-attachment: fixed;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.dn{
+	margin: 0px;
 }
 
 
 @font-face {
   font-family: "stylish"; /* You can choose any name for your font */
   src: url('/NatureBeautyPersonalUse-9Y2DK.ttf') format('truetype');
+}
+
+
+.lds-ring {
+  display: inline-block;
+  margin: 0px;
+  margin-right: 10%;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
