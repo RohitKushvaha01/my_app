@@ -6,19 +6,19 @@
 }
 body,html {
   overflow-x: hidden;
+  
 }
 .ctn{
 	position: relative;
-	
 	align-content: center;
   font-family: stylish;
   color: black;
   width: 100vw;
   font-size: 200%;
-  margin-top: 100px;
   text-shadow: 0px 0px 6px rgba(0,0,0,0.4);
   
 }
+
 .editbox{
 	width: 90%;
   height: 35px;
@@ -28,42 +28,16 @@ body,html {
   text-shadow: 0px 0px 6px rgba(0,0,0,0.8);
   border: 0px solid rgba(100, 100, 100, 1);
   border-radius: 2px;
+  
 	
 }
 .editbox::placeholder {
   color: white; /* Replace with your desired color */
 }
-.DivButton {
-  background: linear-gradient(
-    50deg,
-    rgba(255, 255, 255, 0.4) 12%,
-    rgba(255, 255, 255, 0.1) 77%
-  );
-  background-blend-mode: ;
-  box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.28);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-
-  border: none; /* Remove the default button border */
-  border-radius: 5px; /* Add rounded corners for a glass-like effect */
-  padding: 10px;
-  color: #fff;
-  text-shadow: 0px 0px 6px rgba(0,0,0,0.8);
-  cursor: pointer;
-  font-size: 16px;
-  width: 82%;
-  margin-left: 6%;
-  transition: background-color 0.3s ease;
-  margin-top: 10%;
-  transition: transform 0.2s;
-  
-  font-size: 45%;
-  font-family: Sans-Serif;
-  
-  display: flex;
-  
-  
+.editbox:focus{
+	outline: none;
 }
+
 .btn{
 	background: linear-gradient(
     50deg,
@@ -87,6 +61,7 @@ body,html {
   display: flex;
   transition: background-color 0.3s ease;
   transition: transform 0.2s;
+  -webkit-tap-highlight-color: transparent;
 }
 .btn:active{
 	transform: scale(1.05);
@@ -116,9 +91,13 @@ html {
   
             background-attachment: fixed;
 }
-
 .dn{
 	margin: 0px;
+}
+
+.warn{
+	height: 50%;
+	margin-top: 20%;
 }
 
 
