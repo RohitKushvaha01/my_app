@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import './App.css'
 import {isMobile,isURL,download} from "./Utils"
+import reactManifest from "react-manifest"
+
+
 function App() {
   const [inputValue, setInputValue] = useState('');
   const [loading,isLoading] = useState(false)
@@ -14,12 +17,12 @@ function App() {
   function load(){
   	if(!isURL(inputValue)){
   		//need to show an error
-  		alert("Not a Valid url")
+  		
   		return
   	}
   	
   	isLoading(true)
-    fetch('http://127.0.0.1:8080/url?='+inputValue)
+    fetch('https://rohit.cyclic.cloud/url?='+inputValue)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
